@@ -16,11 +16,14 @@ Then build realm-core, by following [this guide](https://github.com/realm/realm-
 
 Now you can clone this project:
 
+```sh
+  git clone https://github.com/cesarvr/hello-world-realm-core.git
+```
 
 Next make a symbolic link of your realm-core folder in this project:
 
 ```sh
-ln -s <path-to-your-realm-core folder> realm-core
+  ln -s <path-to-your-realm-core folder> realm-core
 ```
 
 ### Running The Example
@@ -42,4 +45,13 @@ creating folder
 ```
 > The program basically creates a Dict data type and stored in a in-memory database.
 
-Now you can start hacking with realm-core.
+### Using XCode 
+
+There is also an XCode project included here so if you prefer, you can open the project with: 
+
+```sh
+open xcode/realm-cpp-test/realm-cpp-test.xcodeproj
+```
+
+
+Now you can start hacking 🏴‍☠️ with realm-core.
