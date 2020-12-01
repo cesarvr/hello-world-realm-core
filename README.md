@@ -9,7 +9,7 @@ First you need to clone [realm-core](https://github.com/realm/realm-core):
 ```
 > At the moment of writing this we are in the process of mergin object-store to [realm-core](https://github.com/realm/realm-core), so for now you will need to jump to the `monorepo` branch `git checkout monorepo`.
 
-Then build realm-core, by following [this guide](https://github.com/realm/realm-core/blob/master/how-to-build.md), for this project to work out-of-the-box make sure to name your build folder `build.DEBUG`.
+Then build realm-core, by following [this guide](https://github.com/realm/realm-core/blob/master/how-to-build.md). Please keep in mind that for this (``hello-world``) to work out-of-the-box you need to make sure to name your build folder `build.DEBUG`, otherwise you might need to modify the `Makefile`.
 
 
 #### This Project
