@@ -1,4 +1,6 @@
 # Prerequisites
+tags
+.lock
 *.d
 .management
 realm-core
