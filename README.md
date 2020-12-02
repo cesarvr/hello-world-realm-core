@@ -34,6 +34,7 @@ The hard part should be over, now you just need to run the project:
 make
 ./a.out
 ```
+> If you get this error `fatal error: 'realm/util/config.h' file not found #include <realm/util/config.h>`, you just need to navigate to the `realm-core` folder and do `cmake .` to generate those files.
 
 You should see this:
 
