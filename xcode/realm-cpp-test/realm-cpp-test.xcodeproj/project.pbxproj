@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB2EF1E22575420400C0A8A2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB2EF1E12575420400C0A8A2 /* main.cpp */; };
+		DB2EF1EB2575425D00C0A8A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EF1EA2575425D00C0A8A2 /* Foundation.framework */; };
+		DB2EF1F22575454A00C0A8A2 /* librealm-dbg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EF1F12575454A00C0A8A2 /* librealm-dbg.a */; };
+		DB2EF1F62575455B00C0A8A2 /* librealm-sync-dbg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EF1F42575455B00C0A8A2 /* librealm-sync-dbg.a */; };
+		DB2EF1FB257545CA00C0A8A2 /* librealm-parser-dbg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EF1FA257545CA00C0A8A2 /* librealm-parser-dbg.a */; };
+		DB2EF2002575465500C0A8A2 /* librealm-parser-dbg.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB2EF1FA257545CA00C0A8A2 /* librealm-parser-dbg.a */; };
+		DB2EF2012575465500C0A8A2 /* librealm-sync-dbg.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB2EF1F42575455B00C0A8A2 /* librealm-sync-dbg.a */; };
+		DB2EF2022575465500C0A8A2 /* librealm-dbg.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB2EF1F12575454A00C0A8A2 /* librealm-dbg.a */; };
+		DB2EF2072575468600C0A8A2 /* librealm-server-dbg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EF2062575468600C0A8A2 /* librealm-server-dbg.a */; };
+		DB2EF2082575469300C0A8A2 /* librealm-server-dbg.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB2EF2062575468600C0A8A2 /* librealm-server-dbg.a */; };
+		DB2EF20C2575485000C0A8A2 /* librealm-object-store-dbg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EF20B2575485000C0A8A2 /* librealm-object-store-dbg.a */; };
+		DB2EF20D2575485300C0A8A2 /* librealm-object-store-dbg.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB2EF20B2575485000C0A8A2 /* librealm-object-store-dbg.a */; };
+		DB2EF21125756D9F00C0A8A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EF21025756D9F00C0A8A2 /* Security.framework */; };
+		DB2EF21525756ED900C0A8A2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EF21425756ED900C0A8A2 /* libz.tbd */; };
+		DB86449E25766A7F0033C66B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB86449D25766A7F0033C66B /* JavaScriptCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB2EF1DC2575420400C0A8A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				DB2EF20D2575485300C0A8A2 /* librealm-object-store-dbg.a in CopyFiles */,
+				DB2EF2082575469300C0A8A2 /* librealm-server-dbg.a in CopyFiles */,
+				DB2EF2002575465500C0A8A2 /* librealm-parser-dbg.a in CopyFiles */,
+				DB2EF2012575465500C0A8A2 /* librealm-sync-dbg.a in CopyFiles */,
+				DB2EF2022575465500C0A8A2 /* librealm-dbg.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB2EF1DE2575420400C0A8A2 /* realm-cpp-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "realm-cpp-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2EF1E12575420400C0A8A2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DB2EF1EA2575425D00C0A8A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB2EF1F12575454A00C0A8A2 /* librealm-dbg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "librealm-dbg.a"; path = "../../../realm-core/build.DEBUG/src/realm/librealm-dbg.a"; sourceTree = "<group>"; };
+		DB2EF1F42575455B00C0A8A2 /* librealm-sync-dbg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "librealm-sync-dbg.a"; path = "../../../realm-core/build.DEBUG/src/realm/sync/librealm-sync-dbg.a"; sourceTree = "<group>"; };
+		DB2EF1FA257545CA00C0A8A2 /* librealm-parser-dbg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "librealm-parser-dbg.a"; path = "../../../realm-core/build.DEBUG/src/realm/parser/librealm-parser-dbg.a"; sourceTree = "<group>"; };
+		DB2EF2062575468600C0A8A2 /* librealm-server-dbg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "librealm-server-dbg.a"; path = "../../../realm-core/build.DEBUG/src/realm/sync/librealm-server-dbg.a"; sourceTree = "<group>"; };
+		DB2EF20B2575485000C0A8A2 /* librealm-object-store-dbg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "librealm-object-store-dbg.a"; path = "../../../realm-core/build.DEBUG/src/realm/object-store/librealm-object-store-dbg.a"; sourceTree = "<group>"; };
+		DB2EF21025756D9F00C0A8A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DB2EF21425756ED900C0A8A2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DB86449D25766A7F0033C66B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB2EF1DB2575420400C0A8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB86449E25766A7F0033C66B /* JavaScriptCore.framework in Frameworks */,
+				DB2EF21525756ED900C0A8A2 /* libz.tbd in Frameworks */,
+				DB2EF21125756D9F00C0A8A2 /* Security.framework in Frameworks */,
+				DB2EF20C2575485000C0A8A2 /* librealm-object-store-dbg.a in Frameworks */,
+				DB2EF2072575468600C0A8A2 /* librealm-server-dbg.a in Frameworks */,
+				DB2EF1F62575455B00C0A8A2 /* librealm-sync-dbg.a in Frameworks */,
+				DB2EF1FB257545CA00C0A8A2 /* librealm-parser-dbg.a in Frameworks */,
+				DB2EF1F22575454A00C0A8A2 /* librealm-dbg.a in Frameworks */,
+				DB2EF1EB2575425D00C0A8A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB2EF1D52575420400C0A8A2 = {
+			isa = PBXGroup;
+			children = (
+				DB2EF1E02575420400C0A8A2 /* realm-cpp-test */,
+				DB2EF1DF2575420400C0A8A2 /* Products */,
+				DB2EF1E92575425D00C0A8A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB2EF1DF2575420400C0A8A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB2EF1DE2575420400C0A8A2 /* realm-cpp-test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB2EF1E02575420400C0A8A2 /* realm-cpp-test */ = {
+			isa = PBXGroup;
+			children = (
+				DB2EF1E12575420400C0A8A2 /* main.cpp */,
+			);
+			path = "realm-cpp-test";
+			sourceTree = "<group>";
+		};
+		DB2EF1E92575425D00C0A8A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB86449D25766A7F0033C66B /* JavaScriptCore.framework */,
+				DB2EF21425756ED900C0A8A2 /* libz.tbd */,
+				DB2EF21025756D9F00C0A8A2 /* Security.framework */,
+				DB2EF20B2575485000C0A8A2 /* librealm-object-store-dbg.a */,
+				DB2EF2062575468600C0A8A2 /* librealm-server-dbg.a */,
+				DB2EF1FA257545CA00C0A8A2 /* librealm-parser-dbg.a */,
+				DB2EF1F42575455B00C0A8A2 /* librealm-sync-dbg.a */,
+				DB2EF1F12575454A00C0A8A2 /* librealm-dbg.a */,
+				DB2EF1EA2575425D00C0A8A2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB2EF1DD2575420400C0A8A2 /* realm-cpp-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB2EF1E52575420400C0A8A2 /* Build configuration list for PBXNativeTarget "realm-cpp-test" */;
+			buildPhases = (
+				DB2EF1DA2575420400C0A8A2 /* Sources */,
+				DB2EF1DB2575420400C0A8A2 /* Frameworks */,
+				DB2EF1DC2575420400C0A8A2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "realm-cpp-test";
+			productName = "realm-cpp-test";
+			productReference = DB2EF1DE2575420400C0A8A2 /* realm-cpp-test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB2EF1D62575420400C0A8A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					DB2EF1DD2575420400C0A8A2 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = DB2EF1D92575420400C0A8A2 /* Build configuration list for PBXProject "realm-cpp-test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB2EF1D52575420400C0A8A2;
+			productRefGroup = DB2EF1DF2575420400C0A8A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB2EF1DD2575420400C0A8A2 /* realm-cpp-test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB2EF1DA2575420400C0A8A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2EF1E22575420400C0A8A2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB2EF1E32575420400C0A8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../realm-core/src\"/**";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DB2EF1E42575420400C0A8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DB2EF1E62575420400C0A8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../realm-core/build.DEBUG/src/realm\"/**";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB2EF1E72575420400C0A8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB2EF1D92575420400C0A8A2 /* Build configuration list for PBXProject "realm-cpp-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB2EF1E32575420400C0A8A2 /* Debug */,
+				DB2EF1E42575420400C0A8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB2EF1E52575420400C0A8A2 /* Build configuration list for PBXNativeTarget "realm-cpp-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB2EF1E62575420400C0A8A2 /* Debug */,
+				DB2EF1E72575420400C0A8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB2EF1D62575420400C0A8A2 /* Project object */;
+}
