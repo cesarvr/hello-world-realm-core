@@ -11,7 +11,7 @@
 #include <realm/object-store/schema.hpp>
 #include <realm/object-store/impl/realm_coordinator.hpp>
 #include <realm/object-store/impl/object_accessor_impl.hpp>
-
+#include <JavaScriptCore/JSValue.h>
 
 #include <realm.hpp>
 
@@ -32,28 +32,52 @@ void makeFolder() {
     }
 }
 
-
 template <typename RealmDictionary>
 void insertValuesIntoDict(RealmDictionary dict, std::map<std::string, std::string>& mmap){
 
     for(std::pair<std::string, std::string> const key_value: mmap) {
         dict.insert(key_value.first, key_value.second);
     }
+    
+    dict.insert("oops", 4);
 }
 
-template <typename RealmDictionary>
-void printValuesFromDict(RealmDictionary dict){
+void printInts(std::string key, object_store::Dictionary& dict) {
+    Mixed v = dict.get<Mixed>(key).get_type();
+    
 
-    // this obscure dict.template here, is because is required by C++ to call methods like dict.get which is a template function member. 
-    std::cout << " value_one -> " << dict.template get<realm::String>("value_one")
-    << std::endl; //one
-    std::cout << " value_two -> " << dict.template get<realm::String>("value_two")
+    std::cout << "Int printer:  " << key << " => " << dict.template get<realm::Int>(key)
     << std::endl;
 }
+
+void printString(std::string key, object_store::Dictionary& dict) {
+    std::cout << "String printer:  " << key << " => " << dict.template get<realm::String>(key)
+    << std::endl;
+}
+
+std::map< DataType, std::function<void(std::string, object_store::Dictionary&)> > _lambda = {
+    { DataType::type_Int, printInts },
+    { DataType::type_String, printString },
+};
+
+
+void readValuesFromDict(object_store::Dictionary& dict) {
+
+    for(std::pair<Mixed, Mixed> mix: dict){
+        auto valueType = mix.second.get_type();
+        
+        auto exec = _lambda[ valueType ];
+            
+        exec( mix.first.get<String>(), dict);
+    }
+}
+
+
 
 int main() {
 
     makeFolder();
+    
 
     realm::Realm::Config config;
     config.in_memory = true;
@@ -62,8 +86,9 @@ int main() {
     config.path = TEST_FILE;
     config.schema_version = 0;
     config.schema = Schema{
-        {"object", { {"value", PropertyType::Dictionary | PropertyType::String} } },
+        {"object", { {"value", PropertyType::Dictionary | PropertyType::Mixed } } },
     };
+    
     
     auto r = Realm::get_shared_realm(config);
     
@@ -85,13 +110,19 @@ int main() {
         {"value_one", "one"},
         {"value_two", "two"}
     };
+   
+    std::cout << "test 01: is Mixed ? " << (dict.get_type() == PropertyType::Mixed) << std::endl;
+//
+//    table->add_column(type_UUID, "id", true);
+//    table->get_column_key("id");
+//    table->create_object().set(<#ColKey col_key#>, <#U value#>)
+//      std::cout << "UUID validaty: " << UUID::is_valid_string("5fc77d9fae64461661a5c160") << std::endl;
+//    UUID myuid("5fc77d9fae64461661a5c160");
     
     insertValuesIntoDict(dict, my_map);
-    printValuesFromDict(dict);
-    
-   
-    std::cout << "tracking result_set: " << track_result_set.size() << std::endl;
-    std::cout << "Dict size: " << dict.size() << std::endl;
+    readValuesFromDict(dict);
+
+    r->commit_transaction();
     
     return 0;
 }
